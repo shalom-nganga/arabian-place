@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arabian Palace | Authentic Arabian Restaurant</title>
+<meta name="description" content="Arabian Palace serves authentic Arabian flavours, grills and rice specialties in an elegant setting. View our menu and reserve your table.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVIGATION (CSS-only mobile menu: checkbox + label) -->
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Arabian Palace home">
+      <img class="brand-logo" src="images/arabian-palace-logo.png" alt="Arabian Palace logo">
+      <span class="brand-text">ARABIAN PALACE</span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+    <label for="nav-toggle" class="burger" aria-label="Menu" aria-hidden="true"><span></span></label>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="nav-cta"><a class="btn" href="#reservations">Book a Table</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-slides" aria-hidden="true">
+  <img class="hero-slide is-active" src="images/hero.jpg" alt="">
+  <img class="hero-slide" src="images/hero-2.jpg" alt="">
+  <img class="hero-slide" src="images/hero-3.jpg" alt="">
+</div>
+    <source src="images/hero-background.mp4" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <p class="eyebrow">A PALACE OF FLAVOUR &amp; GRACE</p>
+    <h1>Indulge in <span>Exquisite Opulence</span></h1>
+    <p class="hero-subtitle">“A culinary symphony awaits”</p>
+    <p class="lead">Gather around the table for soulful Arabian flavours, candlelit evenings, and hospitality that feels like home.</p>
+    <div class="btn-row">
+      <a class="btn" href="#story">Discover our story</a>
+      <a class="text-link" href="#menu">Explore the menu <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="hero-pagination" role="group" aria-label="Hero slides">
+    <button type="button" class="active" aria-label="Show slide 1"></button>
+    <button type="button" aria-label="Show slide 2"></button>
+    <button type="button" aria-label="Show slide 3"></button>
+  </div>
+  </div>
+  <aside class="hero-hours modern-hero-hours" aria-label="Restaurant hours and current status">
+    <div class="timing-top-pill">
+      <span class="live-pulse" aria-hidden="true"></span>
+      <span class="timing-badge-text">OPEN TODAY</span>
+    </div>
+    <div class="hero-timing-content">
+      <span class="eyebrow">HOURS OF HOSPITALITY</span>
+      <h2 class="hero-timing-clock">8:00 AM <em>&ndash;</em> 11:00 PM</h2>
+      <p class="hero-timing-schedule">Monday &ndash; Sunday &bull; Open Daily</p>
+      <div class="hero-timing-features">
+        <span><i aria-hidden="true">✦</i> Dine-in, Takeaway &amp; Iftar</span>
+        <span><i aria-hidden="true">✦</i> Kitchen closes at 10:30 PM</span>
+      </div>
+    </div>
+    <a class="hero-timing-link" href="#reservations">Book a Table <span aria-hidden="true">&rarr;</span></a>
+  </aside>
+</section>
+
+<section class="experience-strip" aria-label="The Arabian Palace experience">
+  <div class="experience-inner">
+    <div><span class="experience-icon" aria-hidden="true">✧</span><span>Culinary mastery</span></div>
+    <div><span class="experience-icon" aria-hidden="true">♧</span><span>Sommelier expertise</span></div>
+    <div><span class="experience-icon" aria-hidden="true">♜</span><span>Fine dining etiquette</span></div>
+    <div><span class="experience-icon" aria-hidden="true">☆</span><span>Finely crafted interiors</span></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section split" id="story">
+  <div class="img-frame">
+  <img class="about-photo" src="images/about.jpg" alt="Arabian Palace garden dining area lit by lanterns at night">
+</div>
+  <div>
+    <p class="eyebrow">OUR STORY</p>
+    <h2>A Taste of Tradition, A Touch of Luxury</h2>
+    <p>Arabian Palace brings the generous flavours of Arabian cooking to your table: slow-cooked rice dishes, charcoal grills, and fresh mezze served in a warm, elegant setting.</p>
+    <ul class="highlights">
+      <li><strong>Authentic Arabian Flavours</strong><span>Traditional spices and recipes.</span></li>
+      <li><strong>Exceptional Hospitality</strong><span>Every guest welcomed like family.</span></li>
+      <li><strong>Memorable Dining Experiences</strong><span>For celebrations and quiet evenings.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section alt" id="menu">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">THE MENU</p>
+      <h2 id="menu-title">Arabian Palace - Full Menu</h2>
+      <p class="note" id="menu-description">Explore the full everyday menu.</p>
+    </header>
+    <div class="menu-mode-switch" role="group" aria-label="Choose a menu">
+      <button type="button" data-menu-mode="everyday" aria-pressed="true">Everyday Menu</button>
+      <button type="button" data-menu-mode="ramadan" aria-pressed="false">RAMADHAN</button>
+    </div>
+    <nav class="menu-category-nav" aria-label="Menu categories"></nav>
+    <div class="menu-categories"></div>
+  </div>
+</section>
+
+<!-- SIGNATURE DISHES -->
+<section class="section" id="signature">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">SIGNATURE DISHES</p>
+      <h2>Chosen by Our Guests</h2>
+    </header>
+    <div class="cards">
+      <article class="card" data-tilt tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Arabian Mixed Grill details"><div class="ph img-d1" role="img" aria-label="Arabian mixed grill platter"></div><div class="card-body"><h3>Arabian Mixed Grill</h3><p>Charcoal grilled meats with rice and salad.</p><span class="price">KSh 2,200</span></div></article>
+      <article class="card" data-tilt tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Chicken Mandi details"><div class="ph img-d2" role="img" aria-label="Chicken mandi on spiced rice"></div><div class="card-body"><h3>Chicken Mandi</h3><p>Smoky, spiced and slow cooked.</p><span class="price">KSh 1,400</span></div></article>
+      <article class="card" data-tilt tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Lamb Kabsa details"><div class="ph img-d3" role="img" aria-label="Lamb kabsa with nuts"></div><div class="card-body"><h3>Lamb Kabsa</h3><p>Tender lamb over fragrant rice.</p><span class="price">KSh 1,800</span></div></article>
+      <article class="card" data-tilt tabindex="0" role="button" aria-haspopup="dialog" aria-label="View Kunafa details"><div class="ph img-d4" role="img" aria-label="Kunafa dessert with pistachio"></div><div class="card-body"><h3>Kunafa</h3><p>Warm, sweet and crisp.</p><span class="price">KSh 650</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- LAHAM MANDI ANATOMY -->
+<section class="section anatomy-section" id="anatomy">
+  <div class="container center">
+    <header class="section-head">
+      <p class="eyebrow">A CLOSER LOOK</p>
+      <h2>THE ANATOMY OF LAHAM MANDI</h2>
+      <p class="note">Our signature charcoal-spiced lamb platter, deconstructed.</p>
+    </header>
+    <div class="anatomy-showcase">
+  <figure class="anatomy-art">
+    <img id="platter" src="images/laham-mandi-anatomy.png" alt="Anatomy of a laham mandi platter, highlighting its lamb, rice, sauces, salad, raisins and fried onions" draggable="false">
+  </figure>
+</div>
+</section>
+
+<dialog class="dish-dialog" aria-labelledby="dish-dialog-title">
+  <button class="dish-dialog-close" type="button" aria-label="Close dish details">&times;</button>
+  <div class="ph dish-dialog-image" role="img"></div>
+  <h2 id="dish-dialog-title"></h2>
+  <p class="dish-dialog-description"></p>
+  <p class="price dish-dialog-price"></p>
+</dialog>
+
+<!-- GALLERY -->
+<section class="section alt" id="gallery">
+  <div class="container">
+    <header class="section-head">
+      <p class="eyebrow">DINING EXPERIENCE</p>
+      <h2>More Than a Meal. An Experience.</h2>
+    </header>
+    <div class="gallery">
+      <div class="ph g-wide img-g1" role="img" aria-label="Restaurant interior"></div>
+      <div class="ph img-g2" role="img" aria-label="Table setting"></div>
+      <div class="ph img-g3" role="img" aria-label="Signature food presentation"></div>
+      <div class="ph g-tall img-g4" role="img" aria-label="Group dining"></div>
+      <div class="ph img-g5" role="img" aria-label="Arabic coffee and dates"></div>
+      <div class="ph g-wide img-g6" role="img" aria-label="Decorative hospitality details"></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATIONS -->
+<section class="reserve" id="reservations">
+  <div class="container center">
+    <p class="eyebrow">RESERVATIONS</p>
+    <h2>Your Table Awaits</h2>
+    <p class="lead">Join us for an evening of Arabian hospitality. Call or email to reserve for any occasion.</p>
+    <!-- EDIT: replace the phone number below (keep the tel: prefix) -->
+    <a class="btn" href="tel:+254797666667">Reserve Your Table</a>
+    <p class="note">Phone: <a href="tel:+254797666667">0797 666 667</a> &middot; Email: <a href="mailto:info@arabianpalace.co.ke">info@arabianpalace.co.ke</a> &middot; Marcus Garvey Road, Kilimani</p>
+  </div>
+</section>
+
+<!-- HOURS & CONTACT -->
+<section class="section" id="contact">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">VISIT US</p>
+      <h2>Opening Hours &amp; Contact</h2>
+      <p class="note">Visit us for dinner, celebrations, or a leisurely evening together.</p>
+      <address>
+        <p><strong>Address:</strong> Marcus Garvey Road, Kilimani</p>
+        <p><strong>Phone:</strong> <a href="tel:+254797666667">0797 666 667</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@arabianpalace.co.ke">info@arabianpalace.co.ke</a></p>
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/arabianpalaceke/" rel="noopener">@arabianpalaceke</a></p>
+      </address>
+      <!-- OPTIONAL MAP: paste your Google Maps "Embed a map" iframe here -->
+    </div>
+    <div class="modern-timing-card" aria-label="Opening hours schedule">
+      <div class="timing-card-header">
+        <div class="timing-header-status">
+          <span class="eyebrow">SCHEDULE &amp; TIMINGS</span>
+          <div class="live-status-badge">
+            <span class="live-pulse" aria-hidden="true"></span>
+            <span id="timing-status-label">Open Today</span>
+          </div>
+        </div>
+        <h3>Hours of Service</h3>
+        <p class="timing-card-subtitle">Welcoming guests for breakfast, lunch, and candlelit dinners.</p>
+      </div>
+
+      <div class="timing-main-banner">
+        <div class="timing-banner-inner">
+          <span class="timing-banner-eyebrow">DAILY DINING</span>
+          <div class="timing-banner-time">8:00 AM &ndash; 11:00 PM</div>
+          <span class="timing-banner-days">All 7 Days a Week</span>
+        </div>
+      </div>
+
+      <div class="timing-days-grid" id="timingDaysGrid" aria-label="Weekly schedule">
+        <div class="timing-day-item" data-day="1"><span class="day-abbr">Mon</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="2"><span class="day-abbr">Tue</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="3"><span class="day-abbr">Wed</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="4"><span class="day-abbr">Thu</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="5"><span class="day-abbr">Fri</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="6"><span class="day-abbr">Sat</span><span class="day-hrs">8am&ndash;11pm</span></div>
+        <div class="timing-day-item" data-day="0"><span class="day-abbr">Sun</span><span class="day-hrs">8am&ndash;11pm</span></div>
+      </div>
+
+      <div class="timing-card-notes">
+        <div class="timing-note-row"><span class="gold-star" aria-hidden="true">✧</span><span>Last orders taken at <strong>10:30 PM</strong> daily</span></div>
+        <div class="timing-note-row"><span class="gold-star" aria-hidden="true">✧</span><span>Special <strong>Ramadhan Iftar</strong> packages available</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container foot-grid">
+    <div><a class="brand foot-brand" href="#home" aria-label="Arabian Palace home"><img class="brand-logo" src="images/arabian-palace-logo.png" alt="Arabian Palace logo"><span class="brand-text">ARABIAN PALACE</span></a><p>Authentic Arabian flavours and warm hospitality.</p></div>
+    <nav aria-label="Footer"><h3>Explore</h3><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#reservations">Reservations</a></nav>
+    <div><h3>Contact</h3><a href="tel:+254797666667">0797 666 667</a><a href="mailto:info@arabianpalace.co.ke">info@arabianpalace.co.ke</a><a href="https://www.instagram.com/arabianpalaceke/" rel="noopener">Instagram</a></div>
+  </div>
+  <p class="copy">&copy; 2026 Arabian Palace. All rights reserved.</p>
+</footer>
+
+<script src="menu.js">;
+console.log("NAV_RECT:" + JSON.stringify(document.querySelector(".nav").getBoundingClientRect()));
+console.log("BRAND_RECT:" + JSON.stringify(document.querySelector(".brand").getBoundingClientRect()));
+</script>
+
+<script src="menu.js"></script>
+<!-- <script src="spin.js"></script> -->
+<script>
+  const navToggle = document.querySelector('#nav-toggle');
+  const heroSlides = [...document.querySelectorAll('.hero-slide')];
+  const heroDots = [...document.querySelectorAll('.hero-pagination button')];
+  const heroStill = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let heroIndex = 0, heroTimer;
+
+  function showHeroSlide(i) {
+    heroIndex = (i + heroSlides.length) % heroSlides.length;
+    heroSlides.forEach((s, n) => s.classList.toggle('is-active', n === heroIndex));
+    heroDots.forEach((d, n) => {
+      d.classList.toggle('active', n === heroIndex);
+      d.setAttribute('aria-current', String(n === heroIndex));
+    });
+  }
+  function startHero() {
+    clearInterval(heroTimer);
+    if (!heroStill) heroTimer = setInterval(() => showHeroSlide(heroIndex + 1), 6000);
+  }
+  heroDots.forEach((d, n) => d.addEventListener('click', () => { showHeroSlide(n); startHero(); }));
+  startHero();
+
+  document.querySelectorAll('.nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navToggle.checked = false;
+    });
+  });
+
+  document.addEventListener('click', (event) => {
+    if (navToggle.checked && !event.target.closest('.nav')) {
+      navToggle.checked = false;
+    }
+  });
+
+  // Dynamic modern timing rendering
+  const todayIndex = new Date().getDay();
+  const activeDayChip = document.querySelector(`.timing-day-item[data-day="${todayIndex}"]`);
+  if (activeDayChip) {
+    activeDayChip.classList.add('is-today');
+    const badge = document.createElement('span');
+    badge.className = 'today-pill';
+    badge.textContent = 'Today';
+    activeDayChip.appendChild(badge);
+  }
+
+  const currentHour = new Date().getHours();
+  const statusLabel = document.querySelector('#timing-status-label');
+  const heroBadge = document.querySelector('.timing-badge-text');
+  if (currentHour >= 8 && currentHour < 23) {
+    if (statusLabel) statusLabel.textContent = 'Open Now • Closes 11 PM';
+    if (heroBadge) heroBadge.textContent = 'OPEN NOW • CLOSES 11 PM';
+  } else {
+    if (statusLabel) statusLabel.textContent = 'Opens Tomorrow 8:00 AM';
+    if (heroBadge) heroBadge.textContent = 'OPENS AT 8:00 AM';
+  }
+
+  const dishDialog = document.querySelector('.dish-dialog');
+  const dialogImage = dishDialog.querySelector('.dish-dialog-image');
+  const dialogTitle = dishDialog.querySelector('#dish-dialog-title');
+  const dialogDescription = dishDialog.querySelector('.dish-dialog-description');
+  const dialogPrice = dishDialog.querySelector('.dish-dialog-price');
+
+  function openDishDialog(card) {
+    const cardImage = card.querySelector('.ph');
+    const imageClass = [...cardImage.classList].find((className) => className.startsWith('img-d'));
+
+    dialogImage.className = `ph dish-dialog-image ${imageClass}`;
+    dialogImage.setAttribute('aria-label', cardImage.getAttribute('aria-label'));
+    dialogTitle.textContent = card.querySelector('h3').textContent;
+    dialogDescription.textContent = card.querySelector('.card-body p').textContent;
+    dialogPrice.textContent = card.querySelector('.price').textContent;
+    dishDialog.showModal(); // the dish does a full turn when it opens, then can be dragged
+  }
+
+  document.querySelectorAll('#signature .card').forEach((card) => {
+    card.addEventListener('click', () => openDishDialog(card));
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        openDishDialog(card);
+      }
+    });
+  });
+
+  dishDialog.querySelector('.dish-dialog-close').addEventListener('click', () => dishDialog.close());
+  dishDialog.addEventListener('click', (event) => {
+    if (event.target === dishDialog) dishDialog.close();
+  });
+  dishDialog.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      dishDialog.close();
+    }
+  });
+
+  const tiltItems = document.querySelectorAll('[data-tilt]');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    tiltItems.forEach((item) => {
+      item.addEventListener('pointermove', (event) => {
+        if (event.pointerType !== 'mouse') return;
+
+        const bounds = item.getBoundingClientRect();
+        const horizontal = (event.clientX - bounds.left) / bounds.width - 0.5;
+        const vertical = (event.clientY - bounds.top) / bounds.height - 0.5;
+        item.style.setProperty('--tilt-x', `${vertical * -6}deg`);
+        item.style.setProperty('--tilt-y', `${horizontal * 6}deg`);
+        item.classList.add('is-tilting');
+      });
+
+      item.addEventListener('pointerleave', () => {
+        item.classList.remove('is-tilting');
+        item.style.removeProperty('--tilt-x');
+        item.style.removeProperty('--tilt-y');
+      });
+    });
+  }
+</script>
+
+</body>
+</html>
