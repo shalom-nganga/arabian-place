@@ -80,10 +80,14 @@
   </div>
 
   <aside class="hero-hours-mini" aria-label="Opening hours">
-    <span class="mini-label">Hours</span>
-    <p class="hours-mini-time">8:00 AM – 11:00 PM</p>
-    <p class="hours-mini-days">Open daily, Monday – Sunday</p>
-  </aside>
+  <span class="mini-label">Hours</span>
+  <p class="hours-mini-time">8:00 AM – 11:00 PM</p>
+  <p class="hours-mini-days">Open daily, Monday – Sunday</p>
+  <span class="timing-top-pill hero-pill">
+    <span class="live-pulse" aria-hidden="true"></span>
+    <span class="timing-badge-text">OPEN NOW • CLOSES 11 PM</span>
+  </span>
+</aside>
 
   <div class="hero-content">
     <h1>Your authentic <span>Arabian Cuisine</span></h1>
@@ -333,7 +337,7 @@
   <div class="container split">
     <div>
       <p class="eyebrow">FIND US</p>
-      <h2>Come and Dine With Us</h2>
+      <h2>Dine With Us</h2>
       <p class="note">Visit us for dinner, celebrations, or a leisurely evening together.</p>
       <address>
         <p><strong>Address:</strong> Marcus Garvey Road, Kilimani</p>
@@ -445,11 +449,13 @@
 
   const isOpen = nairobiHour >= 8 && nairobiHour < 23;
   const statusLabel = document.querySelector('#timing-status-label');
-  const navBadge = document.querySelector('.timing-badge-text');
-  const navPill = document.querySelector('.timing-top-pill');
+  document.querySelectorAll('.timing-badge-text').forEach((el) => {
+  el.textContent = isOpen ? 'OPEN NOW • CLOSES 11 PM' : 'CLOSED • OPENS 8 AM';
+});
   if (statusLabel) statusLabel.textContent = isOpen ? 'Open Now • Closes 11 PM' : 'Closed • Opens 8:00 AM';
-  if (navBadge) navBadge.textContent = isOpen ? 'OPEN NOW • CLOSES 11 PM' : 'CLOSED • OPENS 8 AM';
-  if (navPill) navPill.classList.toggle('is-closed', !isOpen);
+  document.querySelectorAll('.timing-top-pill').forEach((el) => {
+  el.classList.toggle('is-closed', !isOpen);
+});
 
   const dishDialog = document.querySelector('.dish-dialog');
   const dialogImage = dishDialog.querySelector('.dish-dialog-image');
