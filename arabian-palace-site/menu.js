@@ -534,7 +534,7 @@
     }
   ];
 
-      const menuCollections = { everyday: fullMenuCategories, ramadan: ramadanMenuCategories };
+  const menuCollections = { everyday: fullMenuCategories, ramadan: ramadanMenuCategories };
   let activeMenuMode = 'everyday';
   let activeCategoryId = fullMenuCategories[0].id;
 
